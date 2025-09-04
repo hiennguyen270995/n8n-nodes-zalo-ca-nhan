@@ -28,6 +28,12 @@ yarn-error.log*
 # IDE và editor configs
 .vscode/launch.json
 .vscode/settings.json
+.vscode/
+.editorconfig
+.eslintrc.js
+.eslintrc.prepublish.js
+.npmignore
+.prettierrc.js
 .idea/
 *.swp
 *.swo
