@@ -12,7 +12,7 @@ let api: API | undefined;
 
 export class ZaloUser implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo User',
+		displayName: 'Zalo CN User',
 		name: 'zaloUser',
 		icon: 'file:../shared/zalo.svg',
 		group: ['Zalo'],
@@ -20,7 +20,7 @@ export class ZaloUser implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Quản lý người dùng Zalo',
 		defaults: {
-			name: 'Zalo User',
+			name: 'Zalo CN User',
 		},
 		// @ts-ignore
 		inputs: ['main'],

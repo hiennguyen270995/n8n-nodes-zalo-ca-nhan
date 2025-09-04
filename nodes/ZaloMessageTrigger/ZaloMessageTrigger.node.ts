@@ -14,14 +14,14 @@ let reconnectTimer: NodeJS.Timeout | undefined;
 
 export class ZaloMessageTrigger implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo Message Trigger',
+		displayName: 'Zalo CN Message Trigger',
 		name: 'zaloMessageTrigger',
 		icon: 'file:../shared/zalo.svg',
 		group: ['trigger'],
 		version: 1,
 		description: 'Sự kiện lắng nghe tin nhắn trên Zalo',
 		defaults: {
-			name: 'Zalo Message Trigger',
+			name: 'Zalo CN Message Trigger',
 		},
 		// @ts-ignore
 		inputs: [],

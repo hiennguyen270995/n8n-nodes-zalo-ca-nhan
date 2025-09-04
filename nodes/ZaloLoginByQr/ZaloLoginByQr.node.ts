@@ -11,7 +11,7 @@ import axios from 'axios';
 
 export class ZaloLoginByQr implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo Login Via QR Code',
+		displayName: 'Zalo CN Login Via QR Code',
 		name: 'zaloLoginByQr',
 		group: ['Zalo'],
 		version: 1,

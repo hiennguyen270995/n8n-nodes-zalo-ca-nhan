@@ -5,13 +5,13 @@ let api: API | undefined;
 
 export class ZaloTag implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Zalo Tag',
+        displayName: 'Zalo CN Tag',
         name: 'zaloTag',
         group: ['transform'],
         version: 1,
         description: 'Quản lý thẻ (tag) trong Zalo',
         defaults: {
-            name: 'Zalo Tag',
+            name: 'Zalo CN Tag',
         },
         icon: 'file:../shared/zalo.svg',
 						// @ts-ignore

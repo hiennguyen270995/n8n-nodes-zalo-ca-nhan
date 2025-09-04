@@ -13,7 +13,7 @@ let api: API | undefined;
 
 export class ZaloPoll implements INodeType {
     description: INodeTypeDescription = {
-            displayName: 'Zalo Poll',
+            displayName: 'Zalo CN Poll',
             name: 'zaloPoll',
             icon: 'file:../shared/zalo.svg',
             group: ['Zalo'],
@@ -21,7 +21,7 @@ export class ZaloPoll implements INodeType {
             subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
             description: 'Quản bình chọn Zalo',
             defaults: {
-                name: 'Zalo Poll',
+                name: 'Zalo CN Poll',
             },
             // @ts-ignore
             inputs: ['main'],

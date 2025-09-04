@@ -12,14 +12,14 @@ let api: API | undefined;
 
 export class ZaloSendMessage implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo Send Message',
+		displayName: 'Zalo CN Send Message',
 		name: 'zaloSendMessage',
 		icon: 'file:../shared/zalo.svg',
 		group: ['Zalo'],
 		version: 4,
 		description: 'Gửi tin nhắn qua API Zalo sử dụng kết nối đăng nhập bằng cookie',
 		defaults: {
-			name: 'Zalo Send Message',
+			name: 'Zalo CN Send Message',
 		},
 		// @ts-ignore
 		inputs: ['main'],

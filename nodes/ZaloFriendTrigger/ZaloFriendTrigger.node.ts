@@ -13,14 +13,14 @@ let reconnectTimer: NodeJS.Timeout | undefined;
 
 export class ZaloFriendTrigger implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo Friend Trigger',
+		displayName: 'Zalo CN Friend Trigger',
 		name: 'zaloFriendTrigger',
 		icon: 'file:../shared/zalo.svg',
 		group: ['trigger'],
 		version: 1,
 		description: 'Lắng nghe sự kiện kết bạn trên Zalo',
 		defaults: {
-			name: 'Zalo Friend Trigger',
+			name: 'Zalo CN Friend Trigger',
 		},
 		// @ts-ignore
 		inputs: [],

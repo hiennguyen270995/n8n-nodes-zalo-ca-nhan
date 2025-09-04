@@ -13,15 +13,15 @@ let api: API | undefined;
 
 export class ZaloGroup implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo Group',
+		displayName: 'Zalo CN Group',
 		name: 'zaloGroup',
 		icon: 'file:../shared/zalo.svg',
 		group: ['Zalo'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Quản lý nhóm Zalo',
+		description: 'Quản lý nhóm Zalo cá nhân',
 		defaults: {
-			name: 'Zalo Group',
+			name: 'Zalo CN Group',
 		},
 		// @ts-ignore
 		inputs: ['main'],
