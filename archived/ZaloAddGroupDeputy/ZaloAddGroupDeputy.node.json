@@ -1,0 +1,47 @@
+{
+	"node": {
+		"displayName": "Zalo Add Group Deputy (Cookie)",
+		"name": "zaloAddGroupDeputy",
+		"group": [
+			"transform"
+		],
+		"version": 1,
+		"description": "Thêm phó nhóm vào nhóm Zalo",
+		"defaults": {
+			"name": "Zalo Add Group Deputy (Cookie)"
+		},
+		"inputs": [
+			"main"
+		],
+		"outputs": [
+			"main"
+		],
+		"properties": [
+			{
+				"displayName": "Group ID",
+				"name": "groupId",
+				"type": "string",
+				"default": "",
+				"required": true,
+				"description": "ID của nhóm Zalo"
+			},
+			{
+				"displayName": "User ID",
+				"name": "userId",
+				"type": "string",
+				"default": "",
+				"required": true,
+				"description": "ID của người dùng cần thêm làm phó nhóm"
+			}
+		]
+	},
+	"credentials": [
+		{
+			"name": "zaloApi",
+			"required": true
+		}
+	],
+	"thumb": "zalo.png",
+	"codePath": "nodes/ZaloAddGroupDeputy/ZaloAddGroupDeputy.node.ts",
+	"icon": "zalo.png"
+}

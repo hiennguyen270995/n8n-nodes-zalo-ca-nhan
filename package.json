@@ -1,0 +1,111 @@
+{
+	"name": "n8n-nodes-zalo-ca-nhan",
+	"version": "1.0.0",
+	"description": "n8n-nodes-zalo-ca-nhan - Community nodes package cho n8n tự động hóa Zalo hoàn chỉnh. Xây dựng workflow n8n, tự động hóa gửi tin nhắn, quản lý nhóm, bạn bè Zalo. Hỗ trợ đăng nhập QR, webhook tin nhắn, trigger sự kiện kết bạn, tạo poll, quản lý tag. Sử dụng zalo-api-final để thay thế zca-js deprecated. Dành cho automation, marketing, chatbot, CRM integration với Zalo thông qua n8n workflow.",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes",
+		"n8n-automation",
+		"n8n-workflow",
+		"zalo-automation",
+		"zalo-nodes",
+		"zalo-n8n",
+		"zalo-api-final",
+		"zalo-workflow",
+		"tu-dong-hoa-zalo",
+		"tự động hóa zalo",
+		"zalo-integration",
+		"zalo-chatbot",
+		"zalo-marketing",
+		"zalo-crm",
+		"automation-zalo",
+		"workflow-automation",
+		"zalo-trigger",
+		"zalo-webhook",
+		"gui-tin-nhan-tu-dong",
+		"gửi tin nhắn tự động",
+		"quan-ly-nhom-zalo",
+		"quản lý nhóm zalo",
+		"zalo-qr-login",
+		"zalo-message-trigger",
+		"zalo-friend-trigger",
+		"zalo-poll",
+		"zalo-tag",
+		"community-nodes",
+		"no-code-automation",
+		"visual-workflow",
+		"business-automation",
+		"zalo"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan",
+	"author": {
+		"name": "Hien Nguyen Juno",
+		"email": "hiennguyen270995@gmail.com",
+		"url": "https://github.com/hiennguyen270995"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan.git"
+	},
+	"engines": {
+		"node": ">=18.10",
+		"pnpm": ">=9.1"
+	},
+	"packageManager": "pnpm@9.1.4",
+	"main": "index.js",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"build": "tsc && gulp build:icons",
+		"dev": "tsc --watch",
+		"format": "prettier nodes --write",
+		"lint": "eslint nodes package.json",
+		"lintfix": "eslint nodes package.json --fix",
+		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json",
+		"watch": "concurrently \"pnpm run watch\" \"pnpm run start:n8n\"",
+		"start:n8n": "nodemon --watch dist --exec \"npx n8n start\""
+	},
+	"files": [
+		"dist",
+		"qr.png"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/N8nZaloApi.credentials.js",
+			"dist/credentials/ZaloApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ZaloLoginByQr/ZaloLoginByQr.node.js",
+			"dist/nodes/ZaloSendMessage/ZaloSendMessage.node.js",
+			"dist/nodes/ZaloUser/ZaloUser.node.js",
+			"dist/nodes/ZaloGroup/ZaloGroup.node.js",
+			"dist/nodes/ZaloMessageTrigger/ZaloMessageTrigger.node.js",
+			"dist/nodes/ZaloFriendTrigger/ZaloFriendTrigger.node.js",
+			"dist/nodes/ZaloPoll/ZaloPoll.node.js",
+			"dist/nodes/ZaloTag/ZaloTag.node.js"
+		]
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "^7.15.0",
+		"concurrently": "^9.1.2",
+		"eslint": "^8.56.0",
+		"eslint-plugin-n8n-nodes-base": "^1.16.1",
+		"gulp": "^4.0.2",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.3.2",
+		"typescript": "^5.5.3"
+	},
+	"optionalDependencies": {
+		"sharp": "^0.32.1"
+	},
+	"peerDependencies": {
+		"n8n-core": ">=1.0.0",
+		"n8n-workflow": ">=1.0.0"
+	},
+	"dependencies": {
+		"axios": "^1.8.4",
+		"pnpm": "^10.6.5",
+		"zalo-api-final": "^2.1.0"
+	}
+}
