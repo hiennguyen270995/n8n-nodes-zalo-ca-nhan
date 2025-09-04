@@ -12,7 +12,7 @@ let api: API | undefined;
 
 export class ZaloUser implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Zalo CN User',
+		displayName: 'Zalo CN User ',
 		name: 'zaloUser',
 		icon: 'file:../shared/zalo.svg',
 		group: ['Zalo'],
