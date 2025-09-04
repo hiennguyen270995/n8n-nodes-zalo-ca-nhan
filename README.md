@@ -181,13 +181,8 @@ Cám ơn bạn rất nhiều! 💛
 
 **📱 Quét QR Code để mời cafe:**
 
-<div align="center">
-
-<img src="qr.png" alt="QR Code VietinBank" width="200">
-
+<img src="https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan/blob/main/qr.png?raw=true" alt="QR Code VietinBank" width="200">
 *QR Code VietinBank - Quét để mời cafe*
-
-</div>
 
 **💝 Mỗi đóng góp của bạn sẽ giúp:**
 - ⚡ Duy trì và cập nhật package
