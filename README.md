@@ -154,7 +154,7 @@ Chúng tôi xin chân thành cảm ơn:
 - **AloneSky Team** cho repo gốc [n8n-nodes-zalo-ca-nhan](https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan)
 - **n8n Community** đã tạo ra nền tảng automation tuyệt vời
  
-## 📄 License 
+## 📄 License
 
 MIT 
 
