@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-zalo-ca-nhan",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "n8n-nodes-zalo-ca-nhan - Community nodes package cho n8n tự động hóa Zalo hoàn chỉnh. Xây dựng workflow n8n, tự động hóa gửi tin nhắn, quản lý nhóm, bạn bè Zalo. Hỗ trợ đăng nhập QR, webhook tin nhắn, trigger sự kiện kết bạn, tạo poll, quản lý tag. Sử dụng zalo-api-final để thay thế zca-js deprecated. Dành cho automation, marketing, chatbot, CRM integration với Zalo thông qua n8n workflow.",
 	"keywords": [
 		"n8n-community-node-package",
