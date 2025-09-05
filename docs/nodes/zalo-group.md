@@ -1,6 +1,6 @@
-# Zalo Group Node
+# Zalo CN Group Node
 
-Node Zalo Group cho phép bạn tương tác với API nhóm của Zalo, giúp quản lý các nhóm và thành viên trong nhóm một cách dễ dàng.
+Node Zalo CN Group cho phép bạn tương tác với API nhóm của Zalo, giúp quản lý các nhóm và thành viên trong nhóm một cách dễ dàng.
 
 ## Các Thao Tác
 

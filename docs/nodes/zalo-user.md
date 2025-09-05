@@ -1,6 +1,6 @@
-# Zalo User Node
+# Zalo CN User Node
 
-Node Zalo User cho phép bạn tương tác với API người dùng của Zalo, giúp quản lý thông tin người dùng, kết bạn và các cài đặt tài khoản.
+Node Zalo CN User cho phép bạn tương tác với API người dùng của Zalo, giúp quản lý thông tin người dùng, kết bạn và các cài đặt tài khoản.
 
 ## Các Thao Tác
 

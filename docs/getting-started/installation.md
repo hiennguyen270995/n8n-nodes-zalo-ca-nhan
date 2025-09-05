@@ -9,7 +9,7 @@ Community Nodes là các nodes được phát triển bởi cộng đồng n8n. 
 - n8n-nodes-zalo-ca-nhan chỉ khả dụng trên các phiên bản n8n tự host
 - Không có sẵn trên n8n cloud
 - Yêu cầu bạn phải tự host n8n
-- Phiên bản mới nhất hiện tại: 0.5.13
+- Phiên bản mới nhất hiện tại: 1.0.2
 
 ## Cài đặt qua GUI
 

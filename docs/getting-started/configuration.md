@@ -1,22 +1,61 @@
-# Thiết lập credentials
+# Thiết lập credentials cho Zalo CN
 
-Để có thể sử dụng các nodes Zalo bạn phải có Zalo credential. Cách tạo Zalo credential sẽ thông qua một vài bước sau đâu.
+Để có thể sử dụng các nodes Zalo CN bạn cần thiết lập credentials thông qua các bước sau.
 
-## 1. Tạo API Key n8n
+## Lưu ý quan trọng
 
-Đầu tiên, bạn cần tạo API Key cho n8n:
+- Zalo CN Nodes không cần API key từ bên thứ ba
+- Việc đăng nhập được thực hiện trực tiếp qua QR code
+- Không cần đăng ký developer account
 
-1. Đăng nhập vào n8n
-2. Vào phần "Settings" (Cài đặt)
-3. Chọn "API" trong menu bên trái
-4. Click "Create New API Key"
-5. Lưu lại API Key vừa tạo
+## 1. Thêm Zalo CN Credential vào n8n
 
-![Tạo API Key](../assets/apiKey.png)
+### Các bước thực hiện:
 
-## 2. Tạo n8n Credentials
-l
-Tiếp theo, bạn cần tạo credentials cho n8n:
+1. **Mở n8n và vào phần Credentials**
+   - Đăng nhập vào n8n
+   - Vào phần "Credentials" trong menu chính
+   - Click "Add Credential"
+
+2. **Tìm và chọn Zalo CN Credential**
+   - Tìm kiếm "Zalo" trong danh sách credentials
+   - Chọn "Zalo CN API" 
+
+3. **Thiết lập thông tin credential**
+   - **Credential Name**: Đặt tên cho credential (ví dụ: "My Zalo CN Account")
+   - **Description**: Mô tả tùy chọn
+
+4. **Lưu credential**
+   - Click "Save" để lưu credential
+   - Credential này sẽ được sử dụng cho tất cả Zalo CN nodes
+
+## 2. Sử dụng credential trong workflow
+
+### Khi tạo workflow:
+
+1. **Thêm Zalo CN Login By QR node**
+   - Đây là node đầu tiên bắt buộc trong mọi workflow Zalo CN
+   - Node này sẽ xử lý việc đăng nhập
+
+2. **Chọn credential**
+   - Trong mỗi Zalo CN node, chọn credential đã tạo
+   - Tất cả nodes trong workflow nên sử dụng cùng một credential
+
+3. **Đăng nhập qua QR code**
+   - Chạy workflow và node Login By QR sẽ tạo QR code
+   - Quét QR code bằng ứng dụng Zalo trên điện thoại
+   - Xác nhận đăng nhập
+
+## 3. Quản lý session đăng nhập
+
+### Session tự động:
+- Sau khi đăng nhập thành công, session sẽ được lưu
+- Các node tiếp theo sẽ tự động sử dụng session này
+- Session có thời hạn và cần đăng nhập lại khi hết hạn
+
+### Kiểm tra trạng thái session:
+- Sử dụng Zalo CN User node với operation "getUserInfo" để kiểm tra
+- Nếu trả về lỗi authentication, cần đăng nhập lại
 
 1. Ở trang chủ n8n, click vào mũi tên bên cạnh nút "Create Workflow"
 2. Chọn "Create Credential" từ dropdown hiện ra
