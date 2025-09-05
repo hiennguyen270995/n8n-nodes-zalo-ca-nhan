@@ -8,6 +8,17 @@
 
 Thư viện n8n nodes chuyên nghiệp để tích hợp và tự động hóa Zalo thông qua n8n workflow. Sử dụng `zalo-api-final` thay thế `zca-js` deprecated để đảm bảo tính ổn định và hiệu suất cao.
 
+## 📖 Tài liệu hướng dẫn chi tiết
+
+🔗 **[Xem hướng dẫn đầy đủ tại Documentation](https://hiennguyen270995.github.io/n8n-nodes-zalo-ca-nhan/)**
+
+Tài liệu bao gồm:
+- 📋 Hướng dẫn cài đặt từng bước
+- ⚙️ Cấu hình và thiết lập credentials  
+- 📝 Documentation chi tiết cho từng node
+- 🎯 Ví dụ thực tế và best practices
+- 🔧 Troubleshooting và FAQ
+
 ## 🎯 Dành cho ai?
 
 - 🔄 **N8N Users** muốn tự động hóa workflow Zalo
@@ -120,6 +131,16 @@ Node quản lý tag và phân loại liên hệ:
 - Gán tag cho liên hệ
 - Tìm kiếm theo tag
 
+## ☕ Ủng hộ dự án
+
+Nếu package này giúp bạn tiết kiệm thời gian hoặc giải quyết được vấn đề, hãy cân nhắc ủng hộ tác giả một ☕ để duy trì và phát triển thêm tính năng mới! 
+
+**📱 Quét QR Code để mời cafe:**
+
+<img src="https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan/blob/main/qr.png?raw=true" alt="QR Code VietinBank" width="200">
+
+*VietinBank - 100884532014 - NGUYEN THI HIEN*
+
 ## 🔧 Cấu hình
 
 ### 📝 Credentials cần thiết:
@@ -167,29 +188,6 @@ MIT
 ---
 
 🌟 **Nếu thấy hữu ích, hãy cho repo một ⭐ star để ủng hộ tác giả!**
-
-## ☕ Ủng hộ tác giả
-
-Nếu package này giúp bạn tiết kiệm thời gian hoặc giải quyết được vấn đề khó nhằn, hãy cân nhắc ủng hộ tác giả một ☕ (Buy me a coffee) hoặc đơn giản là nhấn **★ Star** cho dự án.  
-Sự động viên nhỏ ấy sẽ tiếp thêm năng lượng để mình tiếp tục duy trì, cập nhật và phát triển thêm nhiều tính năng hữu ích hơn nữa.  
-Cám ơn bạn rất nhiều! 💛
-
-**🏦 Thông tin mời cafe:**
-- **Ngân hàng:** VietinBank
-- **Số tài khoản:** `100884532014`
-- **Chủ tài khoản:** `NGUYEN THI HIEN`
-
-**📱 Quét QR Code để mời cafe:**
-
-<img src="https://github.com/hiennguyen270995/n8n-nodes-zalo-ca-nhan/blob/main/qr.png?raw=true" alt="QR Code VietinBank" width="200">
-*QR Code VietinBank - Quét để mời cafe*
-
-**💝 Mỗi đóng góp của bạn sẽ giúp:**
-- ⚡ Duy trì và cập nhật package
-- 🆕 Phát triển node mới cho n8n
-- 📖 Cải thiện tài liệu hướng dẫn
-- 🐛 Sửa lỗi nhanh chóng
-- 🔧 Tối ưu hóa cho n8n workflow
 
 ## 🌟 Credits
 
