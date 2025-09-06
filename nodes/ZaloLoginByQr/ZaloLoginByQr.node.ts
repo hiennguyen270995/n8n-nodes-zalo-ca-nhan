@@ -15,7 +15,7 @@ export class ZaloLoginByQr implements INodeType {
 		name: 'zaloLoginByQr',
 		group: ['Zalo'],
 		version: 1,
-		description: 'LĐăng nhập Zalo bằng QR code và lưu thông tin vào Credentia',
+		description: 'Đăng nhập Zalo bằng QR code và lưu thông tin vào Credential',
 		defaults: {
 			name: 'Zalo Login Via QR Code',
 		},

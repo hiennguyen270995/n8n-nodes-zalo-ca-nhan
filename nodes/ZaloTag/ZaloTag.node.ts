@@ -27,7 +27,7 @@ export class ZaloTag implements INodeType {
         ],
         properties: [
             {
-                displayName: 'Hành đỘng',
+                displayName: 'Hành động',
                 name: 'action',
                 type: 'options',
                 options: [
